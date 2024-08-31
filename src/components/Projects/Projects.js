@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ME350_1 from "../../Assets/Projects/ME350_1.jpg";
+import ME350_2 from "../../Assets/Projects/ME350_2.jpg";
+import asia_open_1 from "../../Assets/Projects/asia_open_1.jpg";
+import asia_open_2 from "../../Assets/Projects/asia_open_2.jpg";
+import asia_open_3 from "../../Assets/Projects/asia_open_3.jpg";
+import championship_1 from "../../Assets/Projects/championship_1.jpg";
+import championship_2 from "../../Assets/Projects/championship_2.jpg";
+import championship_3 from "../../Assets/Projects/championship_3.png";
 
 function Projects() {
   return (
@@ -15,76 +17,38 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPaths={[ME350_1, ME350_2]}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Autonomous Climbing Robot"
+              description="This is the final project of ME350 course. It is controlled by Raspberry Pi and integrates gyroscope, motor encoders, and camera. The robot utilizes the gyroscope and motor encoders to continuously adjust its path from the road's edges. The camera allows the robot to recognize road signs and make informed decisions. Its robot arm can hold the robot up, making it climb on steps. Its tank tracks help it travel on sand easily."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPaths={[championship_1, championship_2, championship_3]}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Robots for 2023-24 VEX Robotics World Championship"
+              description="These robots were built by Shanghai Jiao Tong University VEX Robotics Team for 2023-24 VEX Robotics World Championship. The entire structure is crafted using milled parts. The large robot's chassis is powered by 8 motors, while the smaller one is driven by 12 motors. Both robots are equipped with gyroscopes, tracking wheels, and motor encoders for precise path planning and autonomous navigation. Pneumatic systems are extensively used throughout the robots to control wings, shovels, and climbers, assisting in specific scoring tasks such as pushing balls into holes and climbing scoring poles. These are likely among the most powerful machines that undergraduates can build at the university level."
+              ghLink="https://github.com/SJTU-VEX/24-Turtle"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPaths={[asia_open_1, asia_open_2, asia_open_3]}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Robots for 2023-24 VEX Robotics Asia Open Finals"
+              description="These robots were built by the Shanghai Jiao Tong University VEX Robotics Team for 2023-24 VEX Robotics Asia Open Finals. The entire structure is crafted using sheet metal components. Both robots utilize motor encoders and gyroscopes for precise path planning and autonomous navigation. Pneumatic systems are extensively used throughout the robots to control wings, shovels, and climbers, assisting in specific scoring tasks such as pushing balls into holes and climbing scoring poles. These are likely among the most powerful machines that undergraduates can build at the university level."
+              ghLink="https://github.com/SJTU-VEX/24-Big"
             />
           </Col>
         </Row>

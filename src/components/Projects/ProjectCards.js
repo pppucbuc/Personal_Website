@@ -7,7 +7,10 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+       {/* 遍历并显示多张图片 */}
+       {props.imgPaths.map((imgPath, index) => (
+        <Card.Img variant="top" src={imgPath} alt={`card-img-${index}`} key={index} />
+      ))}
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
