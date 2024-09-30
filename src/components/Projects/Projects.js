@@ -10,6 +10,8 @@ import asia_open_3 from "../../Assets/Projects/asia_open_3.jpg";
 import championship_1 from "../../Assets/Projects/championship_1.jpg";
 import championship_2 from "../../Assets/Projects/championship_2.jpg";
 import championship_3 from "../../Assets/Projects/championship_3.png";
+import Mhacks_1 from "../../Assets/Projects/Mhacks_1.png";
+import Mhacks_2 from "../../Assets/Projects/Mhacks_2.png";
 
 function Projects() {
   return (
@@ -23,6 +25,20 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPaths={[Mhacks_2, Mhacks_1]}
+              isBlog={false}
+              title="Sqoreo"
+              description="This is a web application completed in 24 hours for MHacks 14. It's an AI chatbot and grade tracker that helps students predict their 
+              course grades based on past performance. Think of it as a crystal ball for your GPA—giving you valuable insights to help you stay on track
+              toward your academic goals. Sqoreo also provides personalized feedback, preventing students from getting overly discouraged by one or two
+              poor performances. With Sqoreo, you can monitor your progress in real-time, with predictions based on three possible scenarios: Trend
+                (maintaining your current performance), Regress (a dip in performance), and Improve (an upward trajectory).The web application was developed 
+                using Python for the backend and React for the frontend. It also integrates API, Jupyter Notebook, and OpenAI GPT-4o."
+              ghLink="https://github.com/pppucbuc/Mhacks17-96"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPaths={[ME350_1, ME350_2]}
