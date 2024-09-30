@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.00ad21ab.css",
-    "main.js": "/static/js/main.c0f9765e.js",
+    "main.js": "/static/js/main.d3ffa74a.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Mhacks_2.png": "/static/media/Mhacks_2.1eafacb4dfa0bea6362c.png",
     "static/media/championship_3.png": "/static/media/championship_3.c98005488d6f3d90fd8b.png",
+    "static/media/Mhacks_1.png": "/static/media/Mhacks_1.b94f08b28b1a9270ec99.png",
     "static/media/championship_2.jpg": "/static/media/championship_2.5841282abf9bfa199bc2.jpg",
     "static/media/ME350_2.jpg": "/static/media/ME350_2.c6531bb0c347cd3c0baf.jpg",
     "static/media/asia_open_2.jpg": "/static/media/asia_open_2.11d5a3258fc10859c9b9.jpg",
@@ -12,17 +14,17 @@
     "static/media/championship_1.jpg": "/static/media/championship_1.10eabf1a0ea0961f4e51.jpg",
     "static/media/asia_open_1.jpg": "/static/media/asia_open_1.7075b5011df8c71977ce.jpg",
     "static/media/ME350_1.jpg": "/static/media/ME350_1.9b4eefba8a874ba6af37.jpg",
-    "static/media/CV.pdf": "/static/media/CV.67af641438455a01363a.pdf",
+    "static/media/CV.pdf": "/static/media/CV.003a2d16596c8e2ee824.pdf",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
     "main.00ad21ab.css.map": "/static/css/main.00ad21ab.css.map",
-    "main.c0f9765e.js.map": "/static/js/main.c0f9765e.js.map",
+    "main.d3ffa74a.js.map": "/static/js/main.d3ffa74a.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00ad21ab.css",
-    "static/js/main.c0f9765e.js"
+    "static/js/main.d3ffa74a.js"
   ]
 }
